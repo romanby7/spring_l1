@@ -16,6 +16,5 @@ public class SpringTestAppConfig {
         System.out.println(someClass2.toString());
         System.out.println(someClass21.equals(someClass2));
 
-
     }
 }
