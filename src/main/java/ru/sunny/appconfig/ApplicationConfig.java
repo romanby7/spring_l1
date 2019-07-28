@@ -17,4 +17,5 @@ public class ApplicationConfig {
 
         return someClass2;
     }
+
 }

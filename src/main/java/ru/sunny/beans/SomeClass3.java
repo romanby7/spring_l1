@@ -23,4 +23,6 @@ public class SomeClass3 {
                 ", description='" + description + '\'' +
                 '}';
     }
+
+
 }

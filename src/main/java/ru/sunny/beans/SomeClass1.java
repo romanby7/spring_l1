@@ -16,6 +16,7 @@ public class SomeClass1 {
     public SomeClass1() {
     }
 
+
     @Override
     public String toString() {
         return "SomeClass1{" +

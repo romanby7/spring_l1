@@ -12,5 +12,6 @@ public class SomeClassRef {
 
     public void print() {
         System.out.println(someClass3.toString());
+
     }
 }
