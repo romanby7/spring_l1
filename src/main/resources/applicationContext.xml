@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="ru.sunny.beans.SomeClass1" name="someClass1">
+        <property name="description" value="SomeClass1 desc"/>
+        <property name="name" value="SomeClass1 name"/>
+    </bean>
+
+    <bean class="ru.sunny.beans.SomeClass2" name="someClass2">
+        <property name="description" value="SomeClass2 desc"/>
+        <property name="name" value="SomeClass2 name"/>
+    </bean>
+
+    <bean class="ru.sunny.beans.SomeClass3" name="someClass3" scope="prototype">
+        <property name="description" value="SomeClass3 desc"/>
+        <property name="name" value="SomeClass3 name"/>
+    </bean>
+
+    <bean class="ru.sunny.beans.SomeClassRef" name="someClassRef" >
+        <property name="someClass3" ref="someClass3"/>
+    </bean>
+
+
+
+</beans>
