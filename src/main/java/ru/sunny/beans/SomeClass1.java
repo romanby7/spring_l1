@@ -1,5 +1,8 @@
 package ru.sunny.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SomeClass1 {
 
     String name;

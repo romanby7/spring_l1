@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="ru.sunny.beans.SomeClass1" name="someClass1">
-        <property name="description" value="SomeClass1 desc"/>
-        <property name="name" value="SomeClass1 name"/>
+    <context:component-scan base-package="ru.sunny" annotation-config="true"/>
+
+    <bean id="someClassId" class="ru.sunny.beans.SomeClass1">
+        <property name="name" value="somaClassId"/>
+        <property name="description" value="descr"/>
     </bean>
 
-    <bean class="ru.sunny.beans.SomeClass2" name="someClass2">
+
+    <!--<bean class="ru.sunny.beans.SomeClass1" name="someClass1">-->
+        <!--<property name="description" value="SomeClass1 desc"/>-->
+        <!--<property name="name" value="SomeClass1 name"/>-->
+    <!--</bean>-->
+
+    <bean class="ru.sunny.beans.SomeClass2" name="someClass2XML">
         <property name="description" value="SomeClass2 desc"/>
         <property name="name" value="SomeClass2 name"/>
     </bean>
