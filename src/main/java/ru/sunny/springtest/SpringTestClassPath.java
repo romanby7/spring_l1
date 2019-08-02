@@ -24,6 +24,5 @@ public class SpringTestClassPath {
         System.out.println(someClass3.equals(someClass31));
 
         someClassRef.print();
-
     }
 }

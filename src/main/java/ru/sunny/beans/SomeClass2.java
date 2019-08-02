@@ -1,5 +1,8 @@
 package ru.sunny.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SomeClass2 {
 
     String name;
@@ -15,7 +18,6 @@ public class SomeClass2 {
 
     public SomeClass2() {
     }
-
 
     @Override
     public String toString() {

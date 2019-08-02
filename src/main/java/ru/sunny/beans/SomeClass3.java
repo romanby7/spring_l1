@@ -1,5 +1,8 @@
 package ru.sunny.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SomeClass3 {
 
     String name;
@@ -23,6 +26,5 @@ public class SomeClass3 {
                 ", description='" + description + '\'' +
                 '}';
     }
-
 
 }
